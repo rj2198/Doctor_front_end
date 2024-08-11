@@ -1,0 +1,487 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F7FA;
+    color: #333;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 18px;
+    left: 18px;
+    width: 1564px;
+    height: 72px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 70px;
+    opacity: 1;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 40px;
+    margin-right: 10px;
+    top: 30px;
+    left: 50px;
+    width: 211px;
+    height: 48px;
+    background: transparent url(img/TestLogo.png) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.header .logo h1 {
+    font-size: 24px;
+    color: #091F52;
+    font-weight: bold;
+}
+
+.header .menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header .menu .menu-item {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #091F52;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+}
+
+.header .menu .menu-item img {
+    margin-right: 8px;
+    width: 18px;
+}
+
+.header .menu .menu-item.active {
+    color: #000000;
+    background: #01F0D0 0% 0% no-repeat padding-box;
+    border-radius: 41px;
+    opacity: 1;
+}
+
+.header .menu .menu-item:hover {
+    background-color: #E0F7FF;
+    color: #007BFF;
+}
+
+.header .profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header .profile img:first-child {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header .profile span {
+    font-weight: bold;
+    color: #091F52;
+}
+
+.header .profile img:last-child {
+    width: 20px;
+    cursor: pointer;
+}
+
+/* Main Container Styles */
+.container {
+    margin: 10px 0px 0px 0px;
+    display: flex;
+    height: calc(100vh - 70px); /* Full height minus header */
+    overflow: hidden;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    border-right: 1px solid #E0E0E0;
+    padding: 20px;
+    overflow-y: auto;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    opacity: 1;
+    top: 122px;
+    left: 18px;
+    width: 367px;
+    height: 1054px;
+    position: absolute;
+}
+/* Patients List Styles */
+.patients-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.patients-list .patient {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #FFFFFF;
+}
+
+.patients-list .patient.active {
+    background-color: #E6F7F2;
+}
+
+.patients-list .patient img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 12px;
+    object-fit: cover;
+}
+
+.patients-list .patient span {
+    flex-grow: 1;
+    font-weight: 600;
+    color: #333;
+    font-size: 16px;
+}
+
+.more-options {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.more-options img {
+    width: 20px;
+    height: 20px;
+}
+
+.patients-list .patient:hover {
+    background-color: #F2F8F7;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Sidebar Header */
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.search-icon img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Content Area Styles */
+.content {
+    left: 400px;
+    position: relative;
+    padding: 20px 20px 20px 20px;
+    overflow-y: auto;
+    background-color: #F5F7FA;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.card {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Diagnosis History Styles */
+.diagnosis-history {
+    display: flex;
+    flex-direction: column;
+    width: 766px;
+    height: 673px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    opacity: 1;
+    margin: 35px 18px 0px 0px;
+}
+
+.diagnostic-list{
+    width: 766px;
+    height: 349px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 16px;
+    opacity: 1;
+    margin: 35px 0px 0px 0px;
+}
+
+.chart-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat {
+    background-color: #F0F4FF;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat img {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 10px;
+}
+
+.stat h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.stat p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #007BFF;
+}
+
+.stat span {
+    font-size: 12px;
+    font-weight: normal;
+    color: #666;
+}
+
+/* Diagnostic List Styles */
+.diagnostic-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.diagnostic-list table th,
+.diagnostic-list table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.diagnostic-list table th {
+    background-color: #F0F4FF;
+    font-weight: bold;
+    color: #333;
+}
+
+.diagnostic-list table td {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Details Section Styles */
+.details {
+    margin: 15px 0px 0px 0px;
+    padding: 20px 0px 0px 0px;
+    overflow-y: auto;
+    width: 367px;
+}
+
+.details .profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.details .profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.details .profile h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.details .info {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px;
+}
+
+.details .info li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.details .info li strong {
+    font-weight: bold;
+}
+
+.details .info li img {
+    margin-right: 8px;
+    width: 16px;
+    vertical-align: middle;
+}
+
+.details .btn {
+    display: inline-block;
+    width: 100%;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.details .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Lab Results Styles */
+.lab-results ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lab-results ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #E0E0E0;
+    font-size: 14px;
+    color: #333;
+}
+
+.lab-results ul li a {
+    color: #007BFF;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.lab-results ul li a:hover {
+    color: #0056b3;
+}
+
+.lab-results ul li a img {
+    width: 20px;
+    vertical-align: middle;
+}
+
+/* Sidebar Header */
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.search-icon img {
+    width: 18px;
+    height: 18px;
+    background: transparent url(img/search_FILL0_wght300_GRAD0_opsz24.png) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar, .details {
+        width: 100%;
+        border-right: none;
+        border-left: none;
+        padding: 10px;
+    }
+
+    .content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
